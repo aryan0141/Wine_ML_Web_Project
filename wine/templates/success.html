@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aryan Wine Company</title>
+    <link rel="stylesheet" href='{% static "success.css" %}'>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src='{% static "Images/logo.jpg"%}' alt="Logo">
+        </div>
+        <ul>
+            <li class="item"><a href="">Home</a></li>
+            <li class="item"><a href="#wines-container">Best Wines</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary" >Here Your Results</h1>
+        <p style="font-size: 30px;">Your Wine Score is: {{answer}}</p>
+        <p style="font-size: 30px;">{{wine_quality}}</p>
+        <p style="font-size: 30px;">Accuracy Of Overall model is: {{accuracy}}%</p>
+        <h2 id="h2">
+            Thanks for choosing us!
+        </h2>
+    </section>
+
+    <section id="wines-container">
+        <h1 class="h-primary center">World's Best Wines</h1>
+        <div id="wines">
+            <div class="box">
+                <img src='{% static "Images/trivento.jpeg"%}' alt="">
+                <h2 class="h-secondary center">Trivento Amado Sur</h2>
+                <p class="center">Among the foothills of the Andes Mountains, grapes originally from the Old World have planted new roots in the sunshine-bathed terroirs of Mendoza; over 6,000 miles from their homeland.
+
+It was a true romance for Malbec, Torrontés and the South. These vines have thrived in Mendoza, developing their full potential and ultimately becoming the most symbolic varietals of their new home, Argentina.</p>
+            </div>
+            <div class="box">
+                <img src='{% static "Images/lan.jpg"%}' alt="">
+                <h2 class="h-secondary center">LAN Gran Reserva Rioja</h2>
+                <p class="center">Crafted from vines of more than 40 years of age, our LAN Gran Reserva spent 24 months in barrel and a further 36 months in bottle to refine and round off the wine. This is our way of paying homage to the passage of time, patience and expertise. Elegant and subtle, it fully expresses the wisdom bequeathed by time.</p>
+            </div>
+            <div class="box">
+                <img src='{% static "Images/chianti.jpg"%}' alt="">
+                <h2 class="h-secondary center">Felsina Berardenga Chianti Classico DOCG</h2>
+                <p class="center">The 2016 Chianti Classico Berardenga is a tight and elegant wine with bright berry notes followed by mineral tones of clay and chalky soil. ... Elegantly fruity nose, with marked scents of wild red berries foregrounding nuances of mixed spices. The palate, too, shows excellent fruit supported by judicious tannins.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src='{% static "Images/e and j.jpg"%}' alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src='{% static "Images/castle.png"%}' alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src='{% static "Images/pernod.png"%}' alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src='{% static "Images/treasurywines.png"%}' alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    
+    <footer>
+        <div class="center">
+            Copyright &copy; Aryan Wine Company. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
