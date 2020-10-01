@@ -3,7 +3,7 @@ A website in which you can check the quality of your wine.
 
 You can refer data.csv to see the complete dataset that we used.
 
-Backend is done in Django
+Backend is done in Django.
 
 The website is not responsive at that time...later it may be changed to the responsive one.
 
